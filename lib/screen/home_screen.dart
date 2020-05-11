@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:mins_app/model/movie.dart';
 import 'package:mins_app/widget/carousel_slider.dart';
+import 'package:mins_app/widget/circle_slider.dart';
 
 class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
@@ -34,6 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
             CarouselImage(movies: movies),
             TopBar(),
           ],
+        ),
+        CircleSlider(
+          movies: movies,
         )
       ],
     );
