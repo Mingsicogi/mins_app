@@ -24,7 +24,6 @@ class CircleSlider extends StatelessWidget {
       ),
     );
   }
-
 }
 
 List<Widget> makeCircleImage(List<Movie> movies) {
