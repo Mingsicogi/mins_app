@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:mins_app/model/movie.dart';
+import 'package:mins_app/widget/box_slider.dart';
 import 'package:mins_app/widget/carousel_slider.dart';
 import 'package:mins_app/widget/circle_slider.dart';
 
@@ -37,6 +38,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         CircleSlider(
+          movies: movies,
+        ),
+        BoxSlider(
           movies: movies,
         )
       ],
