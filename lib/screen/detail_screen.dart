@@ -52,12 +52,34 @@ class _DetailScreenState extends State<DetailScreen>{
                                     widget.movie.poster,
                                     height: 300,
                                   ),
-                                )
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(7),
+                                  child: Text(
+                                    '99% 일치 2019 15+ 시즌 1개',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(fontSize: 13),
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(7),
+                                  child: Text(
+                                    widget.movie.title,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
                         ),
                       ),
+                    ),
+                  ),
+                  Positioned(
+                    child: AppBar(
+                      backgroundColor: Colors.transparent,
+                      elevation: 0,
                     ),
                   )
                 ],
